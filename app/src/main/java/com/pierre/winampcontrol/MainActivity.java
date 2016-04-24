@@ -43,6 +43,42 @@ public class MainActivity extends AppCompatActivity {
                 sendAction("PAUSE");
             }
         });
+        Button play=(Button)findViewById(R.id.button_play);
+        play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendAction("PLAY");
+            }
+        });
+        Button previous=(Button)findViewById(R.id.button_previous);
+        previous.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendAction("PREV");
+            }
+        });
+        Button next=(Button)findViewById(R.id.button_next);
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendAction("NEXT");
+            }
+        });
+        Button volUp=(Button)findViewById(R.id.button_volUp);
+        volUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendAction("VOLUP");
+            }
+        });
+        Button volDown=(Button)findViewById(R.id.button_volDown);
+        volDown.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendAction("VOLDOWN");
+            }
+        });
+
 
     }
     @Override

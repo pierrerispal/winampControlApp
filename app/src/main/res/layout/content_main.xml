@@ -12,12 +12,102 @@
     tools:context="com.pierre.winampcontrol.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pause"
-        android:id="@+id/button_pause"
-        android:layout_alignParentStart="false"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="6dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/button_pause"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Pause"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button_play"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Play"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="6dp"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/button_previous"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Previous"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar_volume"
+            android:layout_gravity="center_horizontal"
+            android:max="100" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="6dp"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/button_volDown"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Volume down"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button_volUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Volume up"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
 </RelativeLayout>
